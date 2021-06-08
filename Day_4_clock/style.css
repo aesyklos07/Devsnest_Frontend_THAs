@@ -1,0 +1,107 @@
+/* *{
+    border: 1px solid red;
+} */
+body{
+    /* background-color:rgba(193, 236, 243, 0.322); */
+display:flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #00ffd1;
+background: repeating-radial-gradient(circle farthest-corner at center center, #00ffd1 0%, #ffff00 10%, #ffff00 10%, #ffff00 10%, #00ff00 20%);
+background: -webkit-repeating-radial-gradient(circle farthest-corner at center center, #00ffd1 0%, #ffff00 10%, #ffff00 10%, #ffff00 10%, #00ff00 20%);
+background: -moz-repeating-radial-gradient(circle farthest-corner at center center, #00ffd1 0%, #ffff00 10%, #ffff00 10%, #ffff00 10%, #00ff00 20%);
+/* background: #030303;
+background: repeating-radial-gradient(circle farthest-corner at center center, #030303 0%, #0a0a0a 10%, #027d76 14%, #f2f2f2 20%);
+background: -webkit-repeating-radial-gradient(circle farthest-corner at center center, #030303 0%, #0a0a0a 10%, #027d76 14%, #f2f2f2 20%);
+background: -moz-repeating-radial-gradient(circle farthest-corner at center center, #030303 0%, #0a0a0a 10%, #027d76 14%, #f2f2f2 20%);*/
+/* h2{
+    align-items: center;
+    margin-left: 67px;
+} */
+}
+.clock{
+    height: 350px;
+    width: 350px;
+    display:flex;
+justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 42px solid rgba(255, 255, 255, 0.692); */
+    border-radius: 50%;
+    box-shadow:rgb(8, 0, 0) 50px 20px 80px ;
+
+}
+.minute{
+
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 150px;
+     height:5px;
+     border-radius:50%;
+     background-color:rgb(0, 0, 0);
+     transform-origin: left center;
+     transform: translateY(50%);
+     animation :time 200s linear infinite;
+     /* transform-origin: bottom left; */
+}
+.hour{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height:5px;
+    border-radius:50%;
+    /* border-radius:0% 0% 50% 50%; */
+    background-color:rgb(0, 0, 0);
+    transform-origin: left;
+    transform: translateY(50%);
+    animation :time 500s linear infinite;
+    
+
+}
+.second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height:5px;
+    border-radius:50%;
+    /* border-radius:0% 0% 50% 50%; */
+    background-color:rgb(0, 0, 0);
+    transform-origin: left;
+    transform: translateY(50%);
+    /* animation :time 30s linear infinite; */
+    /* transform-origin: bottom left; */
+    animation: time 60s steps(60,end) infinite;  
+
+    /* left: calc(45% + 5px);
+    top: calc(0% + 0px);  */
+} 
+
+.dot{
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: calc(50% + 0px);
+    top: calc(50% + 0px);
+    /* height: 7px;
+    width: 7px; */
+    width: 4%;
+    height: 4%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@keyframes time{
+
+from{
+transform :rotate(0deg)
+}
+to{
+    transform :rotate(360deg)
+}
+} 
+    
