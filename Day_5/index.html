@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .button{
+        background-color:black;
+        color: white;
+        font-size:16px;
+        cursor:pointer;
+        box-shadow: 0 5px rgb(98, 96, 98);
+    }
+    .button:active {
+  background-color:rgb(94, 93, 95) ;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+    </style>
+<body>
+    <div class="main" data-tilt data-tilt.max=10>
+        
+        <form name="form1" class="answer" action="index.html" method="POST"><input type="text" name="solve"></form>
+        <div class="num" data-tilt data-tilt.max=10>
+          <button class="button" onclick="form1.solve.value+='7'">7</button>
+          <button class="button" onclick="form1.solve.value+='8'">8</button>
+          <button class="button" onclick="form1.solve.value+='9'">9</button>
+          <button class="button" onclick="form1.solve.value=''">C</button><br>
+          <button class="button" onclick="form1.solve.value+='4'">4</button>
+          <button class="button" onclick="form1.solve.value+='5'">5</button>
+          <button class="button" onclick="form1.solve.value+='6'">6</button>
+          <button class="button" onclick="form1.solve.value+='-'">-</button><br>
+          <button class="button" onclick="form1.solve.value+='1'">1</button>
+          <button class="button" onclick="form1.solve.value+='2'">2</button>
+          <button class="button" onclick="form1.solve.value+='3'">3</button>
+          <button class="button" onclick="form1.solve.value+='+'">+</button><br>
+          <button class="button" onclick="form1.solve.value+='*'">X</button>
+          <button class="button" onclick="form1.solve.value+='0'">0</button>
+          <button class="button" onclick="form1.solve.value+='/'">/</button>
+          <button class="button" onclick="form1.solve.value=eval(form1.solve.value)">=</button><br>
+        </div>
+    </div>
+    <script src="vanilla-tilt.min.js"></script>
+</body>
+</html>
