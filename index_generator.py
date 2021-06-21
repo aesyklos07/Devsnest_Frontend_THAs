@@ -1,6 +1,6 @@
 import os
 
-files = ["<h2><b> Devnest Take-Home Assignments </b></h2>\n", "<h4 ><b> @aesyklos07 </b></h5>\n"]
+files = ["<h2 style="text-align:center;"><b> Devnest Take-Home Assignments </b></h2>\n", "<h4 style="text-align:center;"><b> @aesyklos07 </b></h5>\n"]
 
 for dir, _, _ in os.walk("."):
 	if 'git' not in dir and not dir == ".":
