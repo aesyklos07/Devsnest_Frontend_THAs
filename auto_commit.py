@@ -1,2 +1,3 @@
 import os
-os.system('git pull origin & git add . & git commit -m "latest auto commit" & git push origin')
+msg = input("Enter commit message here ") + " " 
+os.system(f'git pull origin & git add . & git commit -m "{msg}" & git push origin')
