@@ -1,0 +1,51 @@
+*{
+    /* background-color: yellowgreen; */
+}
+.container{
+    /* margin-left: 25%; */
+/* height: 500px;
+width:500px; */
+/* background-color: black; */
+/* border: 2px solid red; */
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+.App{
+    margin-top: 10px;
+    /* margin-right: 350px; */
+    border: 2px solid black;
+    height:400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 10px 10px 10px black;
+}
+.card{
+    height:300px;
+    width:auto;
+    background-color: rgb(52, 241, 241);
+    /* border: 2px solid green; */
+padding:10px;
+box-shadow: 10px 10px 10px blue;
+}
+.image{
+    height:150px;
+    padding: 5%;
+    box-shadow: 5px 5px 5px rgb(110, 238, 238);
+}
+h1{
+    text-align: center;
+    color:rgb(3, 3, 3);
+}
+.image{
+    height:150px;
+    width:180px;
+    box-shadow: 5px 5px 5px rgb(70, 155, 155);
+
+}
+.title{
+    text-align: center;
+}
+/* .subtitle{
+    tex: 20px;
+} */
