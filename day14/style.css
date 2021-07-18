@@ -1,0 +1,21 @@
+body{
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh;
+}
+
+button{
+    width: fit-content;
+    background-color: rgb(155, 238, 227);
+    font-size: 250%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+}
