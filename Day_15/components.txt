@@ -1,0 +1,15 @@
+Functional Component: A functional component is basically a JavaScript/ES6 function that returns a React element (JSX). 
+                      
+                       const Welcome = (props) => { 
+                             return <h1>Hello, {props.name}</h1>; 
+                       }
+                       export default Welcome;
+
+
+Class Component: Class components are ES6 classes that return JSX.
+
+                         class Welcome extends React.Component {
+                           render() {
+                           return <h1>Hello, {this.props.name}</h1>;
+                          }
+                         }
