@@ -1,0 +1,27 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.board{
+  border: 5px solid;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+.box{
+  height: 60px;
+  width: 60px;
+  /* border: 5px solid; */
+  /* margin: 10px; */
+  /* background-color: black; */
+}
+
+.row:nth-child(even) .box:nth-of-type(even),
+.row:nth-child(odd) .box:nth-of-type(odd){
+  background: black;
+}
